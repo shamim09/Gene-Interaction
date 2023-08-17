@@ -12,6 +12,7 @@
 
   const width = 600;
   const height = 600;
+  const margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
 
   const minDistance = .4;
