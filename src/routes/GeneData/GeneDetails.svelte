@@ -25,7 +25,8 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 300px;
+    width: 500px;
+    height: 500px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
