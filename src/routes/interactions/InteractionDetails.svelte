@@ -19,7 +19,8 @@ console.log('Target Gene Link:', targetGeneLink);
     position: fixed;
     bottom: 20px;
     left: 20px;
-    width: 300px;
+    width: 500px;
+    height: 500px;
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
@@ -57,16 +58,21 @@ console.log('Target Gene Link:', targetGeneLink);
 </style>
 
 <div class={`interaction-details ${interactionDetailsClass}`}>
-  <h2>Interaction Details</h2>
+  <h1>Interaction Details</h1>
   <ul>
-    <li>From Gene: <a href="{sourceGeneLink}" target="_blank">{interaction.from_gene_name}</a></li>
-    <li>To Gene: <a href="{targetGeneLink}" target="_blank">{interaction.to_gene_name}</a></li>
+    <h3>From</h3>
+    <li> ID: {interaction.from_id}</li>
+    <li> Name: {interaction.from_name}</li>
+    <li> Gene: {interaction.from_gene_name}</li>
+    <li><a href="{sourceGeneLink}" target="_blank">RegulonDB sourceGeneLink</a></li>
+    <h3>To</h3>
+    <li> ID: {interaction.to_id}</li>
+    <li> Name: {interaction.to_name}</li>
+    <li> Gene: {interaction.to_gene_name}</li>
+    <li><a href="{targetGeneLink}" target="_blank">RegulonDB targetGeneLink</a></li>
+    <h3>interaction</h3>
     <li>Function: {interaction.function}</li>
     <li>Confidence: {interaction.confidence}</li>
-    <li>From ID: {interaction.from_id}</li>
-    <li>To ID: {interaction.to_id}</li>
-    <li><a href="{targetGeneLink}" target="_blank">RegulonDB targetGeneLink</a></li>
-    <li><a href="{sourceGeneLink}" target="_blank">RegulonDB sourceGeneLink</a></li>
-    <!-- Add more details as needed -->
+    
   </ul>
 </div>
